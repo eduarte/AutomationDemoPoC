@@ -14,6 +14,7 @@ namespace AutomationWeb.Steps
         public void GivenIHaveOpenedCorrectIRWeb()
         {
             _loginWebForm = new LoginWebForm(_driver);
+            Console.WriteLine("Hello World!");
         }
         
         [When(@"I login with Username ""(.*)""")]
