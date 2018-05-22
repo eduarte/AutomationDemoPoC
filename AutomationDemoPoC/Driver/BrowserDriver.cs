@@ -36,7 +36,9 @@ namespace AutomationDemoPoC.Driver
 
         private void ChromeBrowser()
         {
-            _driver = new ChromeDriver(driversPath);
+            ChromeOptions options = new ChromeOptions();
+            options.AddArgument("\"no-sandbox\"");
+            _driver = new ChromeDriver(driversPath,options);
         }
 
     }
