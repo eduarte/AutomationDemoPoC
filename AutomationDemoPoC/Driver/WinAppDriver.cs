@@ -1,9 +1,7 @@
-﻿using System;
-using System.Configuration;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Appium.Windows;
+﻿using OpenQA.Selenium.Appium.Windows;
 using OpenQA.Selenium.Remote;
-using TechTalk.SpecFlow.Configuration;
+using System;
+using System.Configuration;
 
 namespace AutomationDemoPoC.Driver
 {
