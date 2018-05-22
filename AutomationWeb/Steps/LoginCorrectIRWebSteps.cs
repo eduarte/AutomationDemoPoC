@@ -1,5 +1,6 @@
 ﻿using AutomationDemoPoC.Base;
 using AutomationWeb.Helper;
+using System;
 using TechTalk.SpecFlow;
 
 namespace AutomationWeb.Steps
@@ -36,7 +37,7 @@ namespace AutomationWeb.Steps
         [Then(@"I should be able to see the home screen")]
         public void ThenIShouldBeAbleToSeeTheHomeScreen()
         {
-            ScenarioContext.Current.Pending();
+            Console.WriteLine("Hello World!");
         }
     }
 }
