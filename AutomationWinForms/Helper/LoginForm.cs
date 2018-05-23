@@ -1,21 +1,26 @@
-﻿using AutomationDemoPoC.Driver;
+﻿
+using AutomationDemoPoC.Drive;
+
 
 namespace AutomationDemoPoC.Helper
 {
     public class LoginForm
     {
         private readonly WinAppDriver _driver;
-        public LoginForm(WinAppDriver driver)
-        {
-            _driver = driver;
-        }
 
         private readonly string userNameID = "username";
         private readonly string passwordID = "password";
         private readonly string serverID = "servers";
         private readonly string oKButton = "ok";
 
-        public void EnterUserName(string username) {
+        public LoginForm(WinAppDriver driver)
+        {
+            _driver = driver;
+        }
+
+
+        public void EnterUserName(string username)
+        {
             _driver.Current.FindElementByAccessibilityId(userNameID).SendKeys(username);
         }
 

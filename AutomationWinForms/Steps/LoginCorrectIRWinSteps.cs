@@ -1,19 +1,42 @@
-﻿using AutomationDemoPoC.Base;
-using AutomationDemoPoC.Helper;
+﻿using AutomationDemoPoC.Helper;
 using System;
+using System.Configuration;
+using System.Diagnostics;
+using System.IO;
 using TechTalk.SpecFlow;
 
 namespace AutomationDemoPoC.Steps
 {
     [Binding]
-    public class LoginCorrectIRWinSteps : BaseTestWinDrive
+    public class LoginCorrectIRWinSteps 
     {
 
         private readonly LoginForm _loginForm;
+        private static Process _driver;
 
         public LoginCorrectIRWinSteps(LoginForm loginForm)
         {
             _loginForm = loginForm;
+        }
+
+        [BeforeTestRun]
+        public static void StartWinAppDriver()
+        {
+            try
+            {
+                _driver = Process.Start(ConfigurationManager.AppSettings["winAppPath"]);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Could not locate WinAppDriver.exe, get it from https://github.com/Microsoft/WinAppDriver/releases and change the winAppPath in app.settings accordingly");
+                throw new FileNotFoundException("Could not locate File WinAppDriver.exe", e);
+            }
+        }
+
+        [AfterTestRun]
+        public static void KillWinAppDriver()
+        {
+            _driver.Kill();
         }
 
         [Given(@"I have launch CorrectIR")]
@@ -25,6 +48,7 @@ namespace AutomationDemoPoC.Steps
         [When(@"I login with Username ""(.*)""")]
         public void WhenILoginWithUsername(string username)
         {
+            
             _loginForm.EnterUserName(username);
         }
         

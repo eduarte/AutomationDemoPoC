@@ -72,7 +72,6 @@
   <ItemGroup>
     <Compile Include="Base\BaseTestWebDrive.cs" />
     <Compile Include="Driver\BrowserDriver.cs" />
-    <Compile Include="Base\BaseTestWinDrive.cs" />
     <Compile Include="Driver\WinAppDriver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
