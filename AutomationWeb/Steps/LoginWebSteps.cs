@@ -6,11 +6,11 @@ using TechTalk.SpecFlow;
 namespace AutomationWeb.Steps
 {
     [Binding]
-    public class LoginCorrectIRWebSteps : BaseTestWebDrive
+    public class LoginWebSteps : BaseTestWebDrive
     {
         private  LoginWebForm _loginWebForm;
 
-        [Given(@"I have opened CorrectIR Web")]
+        [Given(@"I have opened the Web Application")]
         public void GivenIHaveOpenedCorrectIRWeb()
         {
             _loginWebForm = new LoginWebForm(_driver);

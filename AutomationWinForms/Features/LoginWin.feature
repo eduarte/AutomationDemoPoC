@@ -1,5 +1,5 @@
 ﻿Feature: Login
-	In use CorrectIR WinForm
+	In use WinForm
 	As a superAdmin user
 	I want to be able to login into the application
 

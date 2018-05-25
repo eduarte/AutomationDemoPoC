@@ -18,21 +18,21 @@ namespace AutomationWeb.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.3.2.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("LoginCorrectIRWeb")]
-    public partial class LoginCorrectIRWebFeature
+    [NUnit.Framework.DescriptionAttribute("LoginWeb")]
+    public partial class LoginWebFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "LoginCorrectIRWeb.feature"
+#line 1 "LoginWeb.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "LoginCorrectIRWeb", "\tIn use CorrectIR Web\r\n\tAs a superAdmin user\r\n\tI want to be able to login into th" +
-                    "e application", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "LoginWeb", "\tIn use  Web\r\n\tAs a superAdmin user\r\n\tI want to be able to login into the applica" +
+                    "tion", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -74,7 +74,7 @@ namespace AutomationWeb.Features
 #line 7
 this.ScenarioSetup(scenarioInfo);
 #line 8
- testRunner.Given("I have opened CorrectIR Web", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have opened the Web Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
  testRunner.When("I login with Username \"superadmin\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10
