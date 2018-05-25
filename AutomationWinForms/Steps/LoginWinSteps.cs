@@ -8,13 +8,13 @@ using TechTalk.SpecFlow;
 namespace AutomationDemoPoC.Steps
 {
     [Binding]
-    public class LoginCorrectIRWinSteps 
+    public class LoginWinSteps 
     {
 
         private readonly LoginForm _loginForm;
         private static Process _driver;
 
-        public LoginCorrectIRWinSteps(LoginForm loginForm)
+        public LoginWinSteps(LoginForm loginForm)
         {
             _loginForm = loginForm;
         }
@@ -39,8 +39,8 @@ namespace AutomationDemoPoC.Steps
             _driver.Kill();
         }
 
-        [Given(@"I have launch CorrectIR")]
-        public void GivenIHaveLaunchCorrectIR()
+        [Given(@"I have launch the WinApplication")]
+        public void GivenIHaveLaunchTheWinApplication()
         {
             Console.WriteLine("Hello");
         }
@@ -73,7 +73,8 @@ namespace AutomationDemoPoC.Steps
         [Then(@"I should be able to see the home screen")]
         public void ThenIShouldBeAbleToSeeTheHomeScreen()
         {
-            Console.WriteLine("Hello");
+          
+            _loginForm.spreadsheet();
         }
     }
 }

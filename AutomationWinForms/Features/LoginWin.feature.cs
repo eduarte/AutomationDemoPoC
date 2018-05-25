@@ -24,7 +24,7 @@ namespace AutomationWinForms.Features
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "LoginCorrectIRWin.feature"
+#line 1 "LoginWin.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
@@ -74,7 +74,7 @@ namespace AutomationWinForms.Features
 #line 7
 this.ScenarioSetup(scenarioInfo);
 #line 8
- testRunner.Given("I have launch CorrectIR", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have launch the WinApplication", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
  testRunner.When("I login with Username \"superadmin\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10

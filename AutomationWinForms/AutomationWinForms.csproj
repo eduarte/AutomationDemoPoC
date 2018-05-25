@@ -70,20 +70,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Features\LoginCorrectIRWin.feature.cs">
+    <Compile Include="Features\LoginWin.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>LoginCorrectIRWin.feature</DependentUpon>
+      <DependentUpon>LoginWin.feature</DependentUpon>
     </Compile>
     <Compile Include="Helper\LoginForm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Steps\LoginCorrectIRWinSteps.cs" />
+    <Compile Include="Steps\LoginWinSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Features\LoginCorrectIRWin.feature">
+    <None Include="Features\LoginWin.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>LoginCorrectIRWin.feature.cs</LastGenOutput>
+      <LastGenOutput>LoginWin.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

@@ -5,7 +5,7 @@
 
 @mytag
 Scenario: Valid Credentials
-	Given I have launch CorrectIR 
+	Given I have launch the WinApplication 
 	When I login with Username "superadmin"
 		And with the Password "password"
 		And the Server "http://localhost:60000/API/"
